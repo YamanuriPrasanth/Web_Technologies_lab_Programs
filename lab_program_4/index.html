@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>functions</title>
+<style>
+</style>
+</head>
+<body>
+Enter a number : <input type="number" name="num" id="num"><br><br>
+<button type="button" onclick="fact()">Factorial</button> &nbsp 
+<button type="button" onclick="fib()">Fibonacci</button> &nbsp
+<button type="button" onclick="prime()">Prime</button> &nbsp
+<button type="button" onclick="palin()">Palindrome</button> &nbsp <br>
+<p id="res"></p>
+<script>
+function fact(){
+let n = document.getElementById("num").value;
+let f=1;
+for (let i = 1; i <= n; i++) {
+ f *= i;
+}
+document.getElementById("res").innerHTML = f;
+}
+function fib(){
+let n = document.getElementById("num").value;
+let f0 = 0;
+let f1 = 1;
+let fn = f0+f1;
+let str = "0 1"
+while(fn<=n){
+str += " "+fn;
+f0 = f1;
+f1= fn;
+fn = f0+f1;
+}
+document.getElementById("res").innerHTML = str;
+}
+function prime(){
+let n = document.getElementById("num").value;
+let str = "";
+for(let m=2;m<=n;m++){
+let c=0;
+for (let i=2; i<=m/2; i++){
+if ( m % i == 0){
+c+=1;
+}
+}
+if (c==0){
+str += m+" ";
+}
+}
+document.getElementById("res").innerHTML = str;
+}
+function palin(){
+let n = document.getElementById("num").value;
+let t = n;
+let s=0;
+let r=0;
+while(n>0)
+{
+r=n%10;
+s=(s*10)+r;
+n=(n/10)>>0;
+}
+if(s==t)
+{
+document.getElementById("res").innerHTML = "True";
+}
+else{
+document.getElementById("res").innerHTML = "False";
+}
+}
+</script>
+</body>
+</html>
