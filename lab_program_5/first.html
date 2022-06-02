@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Event handling</title>
+</head>
+<body>
+<form name="myform" onsubmit="return validateform()" > 
+Name: <input type="text" name="name"><br/> 
+Password: <input type="password" name="password"><br/> 
+<input type="submit" value="register"> 
+</form> 
+<br> 
+<a href="#" onclick="wn()">click to open new window</a>
+<br>
+<button id="color" onclick="change()" onmouseover="mouseevent()">click me</button>
+</body>
+<script type="text/javascript">
+function validateform(){ 
+var name=document.myform.name.value; 
+var password=document.myform.password.value; 
+if (name==null || name==""){ 
+ alert("Name can't be blank"); 
+ return false ;
+}else if(password.length<6){ 
+ alert("Password must be at least 6 characters long."); 
+ return false ; 
+}
+alert("Succesful validation"); 
+} 
+function wn(){
+ var mm=window.open('http://www.google.com','newwindow','width=200, height=200', 
+"_blank");
+}
+ function change(){
+ document.body.style.backgroundColor = 'aliceblue';
+ }
+ function mouseevent(){
+ document.getElementById("color").style.background="green";
+ }
+</script>
+</html>
