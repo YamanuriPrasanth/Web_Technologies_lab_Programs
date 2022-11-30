@@ -24,21 +24,3 @@ e. On Mouse over event
 a) Write a Document Type Definition (DTD) to validate the above XML file. 
 b) Write a XML Schema Definition (XSD) to validate the above XML file.
 
-7) Create Web pages using AJAX. 
-
-8) User Authentication: 
-Assume four users user1, user2, user3 and user4 having the passwords pwd1, pwd2, pwd3 and pwd4 respectively. Write a PHP for doing the following. 
-1. Create a Cookie and add these four user id’s and passwords to this Cookie. 
-2. Read the user id and passwords entered in the Login form (week1) and authenticate with the values (user id and passwords) available in the cookies. 
-If he is a valid user (i.e., user-name and password match) you should welcome him by name (user-name) else you should display “You are not an authenticated user ’’. 
-Use init-parameters to do this
-
-9) Example PHP program for registering users of a website and login. 
-
-10) Install a database (Mysql or Oracle). 
-Create a table which should contain at least the following fields: name, password, email-id, phone number (these should hold the data from the registration form). 
-Write a PHP program to connect to that database and extract data from the tables and display them. Experiment with various SQL queries. 
-Insert the details of the users who register with the web site, whenever a new user clicks the submit button in the registration page (week2).
-
-11) Write a PHP which does the following job: 
-Insert the details of the 3 or 4 users who register with the web site (week9) by using registration form. Authenticate the user when he submits the login form using the user name and password from the database (similar to week8 instead of cookies).
