@@ -19,8 +19,9 @@ d. Display calendar for the month and year selected from combo box
 e. On Mouse over event
 
 6) Write an XML file which will display the Book information which includes the following: 
-1) Title of the book 2) Author Name 3) ISBN number 
-4) Publisher name 5) Edition 6) Price 
+
+     1) Title of the book 2) Author Name 3) ISBN number 4) Publisher name 5) Edition 6) Price 
+
 a) Write a Document Type Definition (DTD) to validate the above XML file. 
 b) Write a XML Schema Definition (XSD) to validate the above XML file.
 
